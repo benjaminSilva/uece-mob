@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "292277412797",
+    "firebase_url": "https://uecemob.firebaseio.com",
+    "project_id": "uecemob",
+    "storage_bucket": "uecemob.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292277412797:android:2e6ba9fed1b47859",
+        "android_client_info": {
+          "package_name": "com.uece.br.mobuece"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292277412797-afiuo3kv43cn5i36dher50clbhm82ni2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uece.br.mobuece",
+            "certificate_hash": "73b0c0328f2746578193b3acadd7070792b8a7a0"
+          }
+        },
+        {
+          "client_id": "292277412797-6sc0luruor4cljcti349o34a401nil3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEq8nUFhERCMXvbHvB0PqaLB380_LhnWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292277412797-6sc0luruor4cljcti349o34a401nil3f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

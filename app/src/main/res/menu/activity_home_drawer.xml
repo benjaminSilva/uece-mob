@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/menuTop">
+        <item
+            android:id="@+id/nav_novidades"
+            android:icon="@drawable/ic_action_news"
+            android:title="Noticias" />
+        <item
+            android:id="@+id/nav_alunoOnline"
+            android:icon="@drawable/ic_action_student"
+            android:title="Aluno Online" />
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_action_mapa"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/nav_calendarioAcademico"
+            android:icon="@drawable/ic_action_calendario"
+            android:title="Calendário Acadêmico" />
+
+        <item
+            android:id="@+id/nav_restauranteUniversitario"
+            android:icon="@drawable/ic_action_food"
+            android:title="Restaurante Universitário" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_action_info"
+            android:title="Informações" />
+    </group>
+
+    <group
+        android:id="@+id/menuBottom"
+        android:checkableBehavior="single">
+        <!--<item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_action_feedback"
+            android:title="Feedback" />-->
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_action_settings"
+            android:title="Configurações" />
+        <item
+            android:id="@+id/avalia"
+            android:icon="@drawable/ic_action_star"
+            android:title="Avalie-nos :)" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/qualseudestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Clique nas disciplinas para simular a sua grade. Clique e segure para mais informações da disciplina.\n(Disciplinas opcionais não são contabilizadas na soma de créditos)"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/disponiveis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttongreen"
+                android:padding="20dp"
+                android:text="Verde significam disciplinas disponíveis"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/matriculadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonyellow"
+                android:padding="20dp"
+                android:text="Amarelo significam disciplinas sendo cursadas esse semestre"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/concluidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonblue"
+                android:padding="20dp"
+                android:text="Azul significa disciplinas concluídas"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/indisponiveis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonred"
+                android:padding="20dp"
+                android:text="Disciplinas indisponíveis, requer que pré-requisitos sejam concluídos"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/voltarBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingRight="20dp"
+                android:text="Voltar"
+                android:textAlignment="viewEnd" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

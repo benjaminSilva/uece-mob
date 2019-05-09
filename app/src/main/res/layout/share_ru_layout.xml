@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundy">
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/qualseudestion"
+        android:text="Qual dia da semana você quer compartilhar?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen"/>
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_segunda"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:background="@null"
+        android:textColor="@color/darkGreen"
+        android:text="Segunda-Feira"
+        android:id="@+id/segunda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_terca"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/darkGreen"
+        android:background="@null"
+        android:text="Terça-Feira"
+        android:id="@+id/terca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_quarta"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/darkGreen"
+        android:background="@null"
+        android:text="Quarta-Feira"
+        android:id="@+id/quarta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_quinta"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/darkGreen"
+        android:background="@null"
+        android:text="Quinta-Feira"
+        android:id="@+id/quinta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_sexta"
+        android:id="@+id/sexta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textColor="@color/darkGreen"
+        android:paddingLeft="20dp"
+        android:text="Sexta-Feira"
+        android:textAlignment="viewStart"
+/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen"/>
+
+    <Button
+        android:paddingRight="20dp"
+        android:textAlignment="viewEnd"
+        android:background="@null"
+        android:text="Voltar"
+        android:id="@+id/voltarBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

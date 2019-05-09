@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/roundy">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:id="@+id/qualseudestion"
+        android:text="Qual é o seu destino?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen"/>
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_adm"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:background="@null"
+        android:text="Administração"
+        android:id="@+id/importantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_blocos"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:background="@null"
+        android:text="blocos"
+        android:id="@+id/blocos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_cursos"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:background="@null"
+        android:text="Cursos"
+        android:id="@+id/restaurantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_lazer"
+        android:paddingLeft="20dp"
+        android:textAlignment="viewStart"
+        android:background="@null"
+        android:text="Serviços/outros"
+        android:id="@+id/Lazer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_action_add_location"
+        android:id="@+id/adicione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingLeft="20dp"
+        android:text="Adicione uma localização"
+        android:textAlignment="viewStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen"/>
+
+    <Button
+        android:paddingRight="20dp"
+        android:textAlignment="viewEnd"
+        android:background="@null"
+        android:text="Voltar"
+        android:id="@+id/voltarBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

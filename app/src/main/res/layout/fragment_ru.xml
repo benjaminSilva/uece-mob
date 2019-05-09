@@ -1,0 +1,296 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uece.br.mobuece.MenuPrincipal.RUFragment"
+    android:background="@drawable/layer_menu"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progress_barRU"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRU"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_shape_moreroundy"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_action_segunda"
+                    android:id="@+id/date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkGreen"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/carne2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date2"
+                    android:drawableLeft="@drawable/ic_action_carne"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/acompanhamento2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carne2"
+                    android:drawableLeft="@drawable/ic_action_acompanhamento"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/vegetariano2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_vegan"
+                    android:layout_below="@id/acompanhamento2"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_shape_moreroundy"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_action_terca"
+                    android:id="@+id/date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkGreen"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/carne3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date3"
+                    android:drawableLeft="@drawable/ic_action_carne"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/acompanhamento3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carne3"
+                    android:drawableLeft="@drawable/ic_action_acompanhamento"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/vegetariano3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/acompanhamento3"
+                    android:drawableLeft="@drawable/ic_action_vegan"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_shape_moreroundy"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_action_quarta"
+                    android:id="@+id/date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkGreen"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/carne4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date4"
+                    android:drawableLeft="@drawable/ic_action_carne"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/acompanhamento4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carne4"
+                    android:drawableLeft="@drawable/ic_action_acompanhamento"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/vegetariano4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/acompanhamento4"
+                    android:drawableLeft="@drawable/ic_action_vegan" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_shape_moreroundy"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_action_quinta"
+                    android:id="@+id/date5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkGreen"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/carne5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date5"
+                    android:drawableLeft="@drawable/ic_action_carne"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/acompanhamento5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carne5"
+                    android:drawableLeft="@drawable/ic_action_acompanhamento"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:textIsSelectable="true"
+                    android:gravity="center_vertical"
+                    android:id="@+id/vegetariano5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/acompanhamento5"
+                    android:drawableLeft="@drawable/ic_action_vegan" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_shape_moreroundy"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_action_sexta"
+                    android:id="@+id/date6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dia"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkGreen"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/carne6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date6"
+                    android:drawableLeft="@drawable/ic_action_carne"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/acompanhamento6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carne6"
+                    android:drawableLeft="@drawable/ic_action_acompanhamento"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/vegetariano6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/acompanhamento6"
+                    android:drawableLeft="@drawable/ic_action_vegan" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<ImageButton
+        android:visibility="gone"
+        android:elevation="60dp"
+        android:id="@+id/ruece"
+        android:layout_margin="15dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/ruece1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>-->
+
+    <!--<Button
+        android:alpha="0.7"
+        android:id="@+id/ruece"
+        android:layout_margin="15dp"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/ruece1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:stateListAnimator="@anim/button_state_list_animator"
+        />-->
+
+
+</android.support.design.widget.CoordinatorLayout>

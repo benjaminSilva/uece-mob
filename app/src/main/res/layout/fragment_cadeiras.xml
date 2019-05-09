@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uece.br.mobuece.MenuPrincipal.AlunoOnlineFragment.Logged.CadeirasFragment.CadeirasFragment">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/textoInformativo"
+        android:text="@string/clique_nas_cadeiras_para_obter_mais_informa_es_n_incluindo_notas_quando_forem_lan_adas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/textoInformativo"
+            android:id="@+id/cadeirasRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+        </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uece.br.mobuece.MenuPrincipal.ConfigFragment"
+    android:orientation="vertical"
+    android:background="@drawable/green_gradient_inverted">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/circlewhiteshape">
+
+        <TextView
+            android:textColor="@color/darkGreen"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_margin="10dp"
+            android:text="Abrir o aplicativo com qual tela inicial?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radioGroupTelaInicial"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/noticiaRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darkGreen"
+                android:text="Notícias" />
+
+            <RadioButton
+                android:id="@+id/alunoOnlineRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darkGreen"
+                android:text="Aluno Online" />
+
+            <RadioButton
+                android:id="@+id/mapaRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darkGreen"
+                android:text="Mapa" />
+
+            <RadioButton
+                android:id="@+id/calendarioRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darkGreen"
+                android:text="Calendário" />
+
+            <RadioButton
+                android:id="@+id/ruRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darkGreen"
+                android:text="Restaurante Universitário" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/politicaPrivacidade"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/circlewhiteshape">
+
+        <TextView
+            android:textColor="@color/darkGreen"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_margin="10dp"
+            android:text="Privacy policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Leia mais sobre as políticas de privacidade clicando nessa caixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

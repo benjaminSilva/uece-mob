@@ -1,0 +1,137 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uece.br.mobuece.MenuPrincipal.HomeFragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.design.widget.AppBarLayout
+        android:visibility="invisible"
+        android:id="@+id/mainappbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Últimas Notícias"
+            app:titleEnabled="true">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:visibility="invisible"
+                app:indicator_visibility="invisible"
+                app:layout_collapseMode="parallax" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:title="Ultimas Noticias"
+            app:layout_collapseMode="pin">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/green_gradient_inverted" />
+
+                <TextView
+                    android:id="@+id/title_noticia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="4"
+                    android:text="Últimas notícias"
+                    android:textColor="@color/white"
+                    android:textIsSelectable="true"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </android.support.design.widget.CoordinatorLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/main.appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!--<com.daimajia.slider.library.SliderLayout
+        android:visibility="invisible"
+        app:indicator_visibility="invisible"
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"/>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/ultimasNoticias"
+        android:background="@color/lightGreen"
+        android:layout_below="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/darkGreen"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="Últimas Noticias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>-->
+
+
+    <!--<android.support.v7.widget.RecyclerView
+        android:visibility="invisible"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/ultimasNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>-->
+
+    <ProgressBar
+        android:id="@+id/progress_bar_home"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center" />
+
+
+</android.support.design.widget.CoordinatorLayout>

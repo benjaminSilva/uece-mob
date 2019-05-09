@@ -1,0 +1,89 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uece.br.mobuece.MenuPrincipal.MapaFragment.MapaFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/procurar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:alpha="0.8"
+        android:background="@drawable/search01" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/circlewhiteshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8">
+
+        <CheckBox
+            android:id="@+id/importantesCB"
+            android:checked="true"
+            android:buttonTint="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adm"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/blocosCB"
+            android:checked="true"
+            android:buttonTint="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blocos"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <CheckBox
+            android:id="@+id/restaurantesCB"
+            android:checked="true"
+            android:buttonTint="@color/darkGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cursos"
+            android:textColor="@color/darkGreen"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <CheckBox
+            android:id="@+id/lazeresCB"
+            android:checked="true"
+            android:buttonTint="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outros"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

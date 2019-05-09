@@ -1,0 +1,151 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.uece.br.mobuece.MenuPrincipal.NoticiaFragment">
+
+
+    <!--<android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+    <android.support.design.widget.AppBarLayout
+        android:visibility="invisible"
+        android:id="@+id/mainappbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/mainImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_collapseMode="pin"
+                app:contentInsetStart="0dp">
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/green_gradient_inverted"
+                        android:alpha="0.8" />
+
+                    <TextView
+                        app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                        android:layout_gravity="center"
+                        android:id="@+id/title_noticia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="Titulo"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/black"
+                        android:shadowRadius="4"
+                        android:maxLines="2"
+                        android:textIsSelectable="true"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        app:layout_collapseMode="pin"/>
+
+
+                </android.support.design.widget.CoordinatorLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/main.appbar"
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--<TextView
+                android:id="@+id/title_noticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Titulo"
+                android:textColor="@color/darkGreen"
+                android:textIsSelectable="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />-->
+            <TextView
+                android:id="@+id/noticia_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:autoLink="all"
+                android:text="TEXTO TESTE DE NOTICIA"
+                android:textIsSelectable="true"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progress_bar_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+
+    <!--<ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_noticia">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >-->
+
+    <!--</LinearLayout>
+</ScrollView>-->
+
+</android.support.design.widget.CoordinatorLayout>
